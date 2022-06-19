@@ -1,0 +1,78 @@
+/*Global reset*/
+* {
+	padding: 0;
+	margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p, pre, blockquote, label, ul, ol, dl, fieldset, address { margin:0.5em 0; } 
+li, dd { margin-left:1em; } 
+fieldset { padding: .5em; }
+/*Global reset*/
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #333333;
+}
+
+.block {
+	/*background-color: #000000;*/
+	position: absolute;
+	font-size: 0px;
+}
+
+.head_r {
+	background: #FFFFFF url(images/head_r.jpg) top right no-repeat;
+}
+
+.tail_r {
+	background: #FFFFFF url(images/tail_r.jpg) top left no-repeat;
+}
+
+.head_l {
+	background: #FFFFFF url(images/head_l.jpg) top left no-repeat;
+}
+
+.tail_l {
+	background: #FFFFFF url(images/tail_l.jpg) top right no-repeat;
+}
+
+.head_t {
+	background: #FFFFFF url(images/head_t.jpg) top left no-repeat;
+}
+
+.tail_t {
+	background: #FFFFFF url(images/tail_t.jpg) bottom left no-repeat;
+}
+
+.head_b {
+	background: #FFFFFF url(images/head_b.jpg) bottom right no-repeat;
+}
+
+.tail_b {
+	background: #FFFFFF url(images/tail_b.jpg) top right no-repeat;
+}
+
+#note, #button {
+    margin-left: 10px;
+}
+
+#message {
+	position: absolute;
+	background-color: #ffbc7d;
+	color: #000000;
+	display: none;
+	overflow: hidden;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+}
+
+#message .message-inner {
+    margin: 15px;
+}
+
+#message a {
+    color: #b93809;
+	text-decoration: underline;
+}
+

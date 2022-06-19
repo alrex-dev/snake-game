@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>My Snake</title>
+<link rel="icon" href="favicon.ico" />
+<link rel="stylesheet" type="text/css" href="snake.css" />
+<script type="text/javascript" src="snake.js" language="javascript"></script>
+</head>
+
+<body>
+    <p id="note">Click &rarr; to start!</p>
+    <a href="javascript: void(0);" onclick="mysnake.toggleState(); return false;" id="button"></a>
+
+    <div id="turn">&nbsp;</div>
+    <div id="head">&nbsp;</div>
+    <div id="compare">&nbsp;</div>
+    <div id="move">&nbsp;</div>
+    <div id="food">&nbsp;</div>
+
+    <div id="block_repository"></div>
+    <script type="text/javascript">
+    var mysnake = new Snake();
+
+    document.onkeydown = function( e ) { 
+        e = ( typeof e == 'undefined' ) ? event : e;
+        
+        mysnake.getKeyPressed( e );
+    }
+    </script>
+
+    <div id="message">
+        <div class="message-inner">
+            <p>Ooops... You killed the snake!</p>
+            <p><a href="javascript: void(0);" onclick="mysnake.reset(); return false;">Click to try again</a></p>
+            <div>Author: Alrex Consus</div>
+        </div>
+    </div>
+</body>
+
+</html>
